@@ -3,6 +3,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 1.5;
+  background-color: antiquewhite;
 }
 
 /* Select all h1, h2, ..., h6 tags */
