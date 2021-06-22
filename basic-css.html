@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Properties</title>
+    <style>
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url("wallpaper.jpeg");
+        }
+
+        .header1{
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            padding: 50px 0;
+            color: rgb(15, 50, 116);
+            background-color: rgb(247, 210, 162);
+            font-size: 40px;
+        }
+
+        .header2{
+            letter-spacing: 5px;
+            color: orange;
+        }
+
+        .bigdiv{
+            max-width: 1200px;
+            margin: 50px auto 10px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+
+        .smalldiv{
+            display: block;
+            background-color: ghostwhite;
+            padding: 20px;
+            border: 1px solid lightgray;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px grey;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .recipe{
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .header3{
+            line-height: 2em;
+            font-size: 20px;
+            font-style: oblique;
+        }
+
+        .smalldiv:nth-child(1) .content{
+            line-height: 2em;
+            font-size: 20px;
+            color: rgb(37, 73, 141);
+            text-align: justify;
+        }
+
+        .smalldiv:nth-child(2) .content{
+            line-height: 3em;
+            font-size: 25px;
+            color: rgb(37, 73, 141);
+            text-align: right;
+        }
+
+        .div3{
+            max-width: 700px;
+            color: rgb(37, 73, 141);
+            font-size: 20px;
+            background-color: ghostwhite;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px grey;
+            box-sizing: border-box;
+            
+        }
+
+        ul{
+            list-style-type: kannada;
+            list-style-position: inside;
+        }
+
+        #image{
+            display: block;
+            text-align: center;
+        }
+        img{
+            width: 600px;
+            height: 400px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <h1 class="header1">This webpage is for basic CSS Properties</h1>
+        <h2 class="header2">I'll try my best lol</h2>
+        <div class="bigdiv">
+            <div class="smalldiv">
+                <h2 class="header2 recipe">Recipe 1</h2>
+                <h3 class="header3">Roasted Nectarines With Labneh, Herbs and Honey from Simply by Sabrina Ghayour</h3>
+                <p class="content">Sabrina Ghayour says she doesn’t know whether this dish is a salad or dessert—the truth is, I don’t know either. What I do know is that ever since I made it for the first time last year, it quickly became a staple in my summer cooking repertoire. Ripe nectarines roast until they become tender and caramelized along the edges before they’re placed on a bed of tangy Greek yogurt. Everything gets topped with a drizzle of olive oil and honey—and a sprinkle of nuts, herbs, and salt—to create a sweet-and-savory plate you can snack on at any time of day. —Tiffany Hopkins, assistant editor
+                </p>
+            </div>
+    
+            <div class="smalldiv">
+                <h2 class="header2 recipe">Recipe 2</h2>
+                <h3 class="header3">Marinated Tomatoes from Night + Market by Kris Yenbamroong</h3>
+                <p class="content">I love this dish because it’s so flavorful and punchy—and you can make it without having to turn the stove on. I usually have all the ingredients on hand, and I think it is just such a fantastic way to showcase peak summer tomatoes. This recipe is always a hit at dinner parties, and guests are always asking for more! —Rachel Gurjar, associate food editor</p>
+            </div>
+        </div>
+
+        <div class="div3">
+            <h3 class="header3">Things you need to have in your kitchen:</h3>
+            <ul>
+                <li>Knives</li>
+                <li>Knife sharpener</li>
+                <li>Cutting boards</li>
+                <li>Bowls</li>
+                <li>Measuring cups and spoons</li>
+                <li>Cookware</li>
+                <li>Utensils</li>
+                <li>Thermometer</li>
+                
+            </ul>
+        </div>
+
+        <div id="image">
+            <img src="https://media.giphy.com/media/6HhvA69mrLT4AHjXFR/giphy.gif" alt="happy gif">
+        </div>
+
+        <div>
+            <p>This is paragraph1</p>
+        </div>
+    </section>
+</body>
+</html>
